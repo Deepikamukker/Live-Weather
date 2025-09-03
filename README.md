@@ -1,12 +1,80 @@
-# React + Vite
+🌦️ Weather Now
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Weather Now is a simple and interactive weather application built for Jamie (Outdoor Enthusiast) who wants to check current weather conditions quickly for any city.
 
-Currently, two official plugins are available:
+The app uses the Open-Meteo API
+ for fetching live weather data and the Geocoding API to convert city names into latitude & longitude. It also integrates maps to visualize the searched location.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
 
-## Expanding the ESLint configuration
+🌍 Search weather by city name (via Open-Meteo Geocoding API)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📍 Fetch weather by latitude & longitude
+
+🌡️ Displays current temperature, wind, and weather conditions
+
+🗺️ Map integration to show searched location
+
+⚡ Built with React + Vite for fast performance
+
+🎨 Styled with CSS for clean UI
+
+🔗 Deployed on GitHub Pages & StackBlitz
+
+🛠️ Tech Stack
+
+React + Vite (Frontend framework)
+
+JavaScript (ES6+)
+
+CSS (Styling)
+
+Open-Meteo API (Weather data)
+
+Geocoding API (Place → Coordinates)
+
+Maps API (Location visualization)
+
+📂 Project Setup
+1️⃣ Clone the Repository
+git clone https://github.com/Deepikamukker/Live-Weather.git
+cd Live-Weather
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Start Development Server
+npm run dev
+
+
+👉 The app will be available at:
+http://localhost:5173
+
+4️⃣ Build for Production
+npm run build
+
+5️⃣ Preview Production Build
+npm run preview
+
+🌐 Live Demo
+
+StackBlitz Deployment: https://stackblitz.com/~/github.com/Deepikamukker/Live-Weather
+
+
+🔮 Future Enhancements
+
+🌤️ Add hourly & daily weather forecast
+
+📊 Add weather charts (temperature, humidity trends)
+
+🎨 Dark mode support
+
+📌 Save favorite locations
+
+👩‍💻 Author
+
+Deepika Mukker
+
+GitHub: @Deepikamukker
+
+✨ Built with ❤️ for outdoor enthusiasts who want quick, live weather updates!
