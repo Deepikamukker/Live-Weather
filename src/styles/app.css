@@ -1,0 +1,138 @@
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  background: linear-gradient(120deg, #1e3c72, #2a5298); 
+}
+.left-panel {
+  flex: 0.6;
+  margin: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  animation: fadeInCard 1s ease;
+  transition: transform 0.3s ease;
+}
+
+.left-panel:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.left-panel h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.weather-details {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+  color: #f0f0f0;
+}
+.right-panel {
+  flex: 3.4;
+  display: flex;
+  flex-direction: column;
+}
+.map-section {
+  flex: 2;
+  border-radius: 16px;
+  margin: 15px;
+  overflow: hidden;
+  position: relative;
+  animation: zoomIn 1.2s ease;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.map-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 5s ease;
+}
+
+.map-img:hover {
+  transform: scale(1.1);
+}
+
+.map-placeholder {
+  color: #ddd;
+  font-size: 20px;
+  font-style: italic;
+}
+.info-section {
+  flex: 1;
+  background: #ffffff;
+  padding: 25px;
+  font-size: 18px;
+  border-radius: 16px 16px 0 0;
+  margin: 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: slideUp 1s ease;
+  box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.2);
+}
+.info-section h2 {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 12px;
+  color: #2a5298;
+  font-size: 22px;
+  font-weight: 600;
+}
+.info-section p {
+  color: #555;
+  line-height: 1.6;
+}
+@keyframes fadeInCard {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.error {
+  color: #ff4d6d;
+  font-weight: bold;
+  margin-top: 10px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
